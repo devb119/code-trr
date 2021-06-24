@@ -9,7 +9,7 @@ int main(){
     
     // FILE *fptr;
     // if((fptr = fopen("input.txt", "r")) == NULL){
-    //     printf("Khong mo duoc file\n");
+    //     // printf("Khong mo duoc file\n");
     //     return -1;
     // }
     // //n: so dinh, m: so canh
@@ -18,7 +18,7 @@ int main(){
     // fscanf(fptr, "%d %d\n", &n, &m);
     // for(int i = 0; i < m; i++){
     //     int u, v;
-    //     fscanf(fptr, "%d %d %d\n", &u , &v);
+    //     fscanf(fptr, "%d %d\n", &u , &v);
     //     cgraph_ivec_push_back(&edges, u);
     //     cgraph_ivec_push_back(&edges, v);
     // }

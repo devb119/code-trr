@@ -90,8 +90,6 @@ build CMakeFiles/test.dir/test.o: C_COMPILER__test ../test.c || cmake_object_ord
   DEP_FILE = CMakeFiles/test.dir/test.o.d
   OBJECT_DIR = CMakeFiles/test.dir
   OBJECT_FILE_DIR = CMakeFiles/test.dir
-  TARGET_COMPILE_PDB = CMakeFiles/test.dir/
-  TARGET_PDB = test.pdb
 
 
 # =============================================================================
@@ -107,9 +105,8 @@ build test: C_EXECUTABLE_LINKER__test CMakeFiles/test.dir/test.o | libmylib.a cg
   OBJECT_DIR = CMakeFiles/test.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/test.dir/
   TARGET_FILE = test
-  TARGET_PDB = test.pdb
+  TARGET_PDB = test.dbg
 
 
 #############################################
@@ -166,8 +163,6 @@ build CMakeFiles/mylib.dir/graphlib.o: C_COMPILER__mylib ../graphlib.c || cmake_
   DEP_FILE = CMakeFiles/mylib.dir/graphlib.o.d
   OBJECT_DIR = CMakeFiles/mylib.dir
   OBJECT_FILE_DIR = CMakeFiles/mylib.dir
-  TARGET_COMPILE_PDB = CMakeFiles/mylib.dir/mylib.pdb
-  TARGET_PDB = libmylib.pdb
 
 
 # =============================================================================
@@ -181,9 +176,8 @@ build libmylib.a: C_STATIC_LIBRARY_LINKER__mylib CMakeFiles/mylib.dir/graphlib.o
   OBJECT_DIR = CMakeFiles/mylib.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/mylib.dir/mylib.pdb
   TARGET_FILE = libmylib.a
-  TARGET_PDB = libmylib.pdb
+  TARGET_PDB = mylib.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -291,102 +285,80 @@ build cmake_object_order_depends_target_cgraph: phony || cgraph/CMakeFiles/cgrap
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_error.c.o: C_COMPILER__cgraph ../cgraph/cgraph_error.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_error.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_ivec.c.o: C_COMPILER__cgraph ../cgraph/cgraph_ivec.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_ivec.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/type_indexededgelist.c.o: C_COMPILER__cgraph ../cgraph/type_indexededgelist.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/type_indexededgelist.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/structure_generators.c.o: C_COMPILER__cgraph ../cgraph/structure_generators.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/structure_generators.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/visitors.c.o: C_COMPILER__cgraph ../cgraph/visitors.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/visitors.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_iqueue.c.o: C_COMPILER__cgraph ../cgraph/cgraph_iqueue.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_iqueue.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_queue.c.o: C_COMPILER__cgraph ../cgraph/cgraph_queue.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_queue.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/structural_properties.c.o: C_COMPILER__cgraph ../cgraph/structural_properties.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/structural_properties.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_istack.c.o: C_COMPILER__cgraph ../cgraph/cgraph_istack.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_istack.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/cgraph_rvec.c.o: C_COMPILER__cgraph ../cgraph/cgraph_rvec.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/cgraph_rvec.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 build cgraph/CMakeFiles/cgraph.dir/heap.c.o: C_COMPILER__cgraph ../cgraph/heap.c || cmake_object_order_depends_target_cgraph
   DEP_FILE = cgraph/CMakeFiles/cgraph.dir/heap.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   OBJECT_FILE_DIR = cgraph/CMakeFiles/cgraph.dir
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
-  TARGET_PDB = cgraph/libcgraph.pdb
 
 
 # =============================================================================
@@ -397,30 +369,17 @@ build cgraph/CMakeFiles/cgraph.dir/heap.c.o: C_COMPILER__cgraph ../cgraph/heap.c
 # Link the static library cgraph/libcgraph.a
 
 build cgraph/libcgraph.a: C_STATIC_LIBRARY_LINKER__cgraph cgraph/CMakeFiles/cgraph.dir/cgraph_error.c.o cgraph/CMakeFiles/cgraph.dir/cgraph_ivec.c.o cgraph/CMakeFiles/cgraph.dir/type_indexededgelist.c.o cgraph/CMakeFiles/cgraph.dir/structure_generators.c.o cgraph/CMakeFiles/cgraph.dir/visitors.c.o cgraph/CMakeFiles/cgraph.dir/cgraph_iqueue.c.o cgraph/CMakeFiles/cgraph.dir/cgraph_queue.c.o cgraph/CMakeFiles/cgraph.dir/structural_properties.c.o cgraph/CMakeFiles/cgraph.dir/cgraph_istack.c.o cgraph/CMakeFiles/cgraph.dir/cgraph_rvec.c.o cgraph/CMakeFiles/cgraph.dir/heap.c.o
-  LANGUAGE_COMPILE_FLAGS = -g -Wall -g
+  LANGUAGE_COMPILE_FLAGS = -g -Wall -Wno-unused-function -g
   OBJECT_DIR = cgraph/CMakeFiles/cgraph.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/CMakeFiles/cgraph.dir/cgraph.pdb
   TARGET_FILE = cgraph/libcgraph.a
-  TARGET_PDB = cgraph/libcgraph.pdb
+  TARGET_PDB = cgraph.a.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
 # /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/cgraph/CMakeLists.txt
 # =============================================================================
-
-
-#############################################
-# Utility command for install/strip
-
-build cgraph/examples/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/all
-  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build cgraph/examples/install/strip: phony cgraph/examples/CMakeFiles/install/strip.util
 
 
 #############################################
@@ -436,45 +395,162 @@ build cgraph/examples/install/local: phony cgraph/examples/CMakeFiles/install/lo
 
 
 #############################################
-# Utility command for edit_cache
+# Utility command for install/strip
 
-build cgraph/examples/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples && /usr/bin/cmake-gui -S/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib -B/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b
-  DESC = Running CMake cache editor...
+build cgraph/examples/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build cgraph/examples/edit_cache: phony cgraph/examples/CMakeFiles/edit_cache.util
+build cgraph/examples/install/strip: phony cgraph/examples/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cgraph_ivec_t_demo
 
 
 #############################################
-# Utility command for install
+# Order-only phony target for cgraph_ivec_t_demo
 
-build cgraph/examples/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/all
-  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples && /usr/bin/cmake -P cmake_install.cmake
-  DESC = Install the project...
+build cmake_object_order_depends_target_cgraph_ivec_t_demo: phony || cmake_object_order_depends_target_cgraph
+
+build cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/cgraph_ivec_t_demo.c.o: C_COMPILER__cgraph_ivec_t_demo ../cgraph/examples/cgraph_ivec_t_demo.c || cmake_object_order_depends_target_cgraph_ivec_t_demo
+  DEP_FILE = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/cgraph_ivec_t_demo.c.o.d
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
+  INCLUDES = -I../cgraph
+  OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir
+  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cgraph_ivec_t_demo
+
+
+#############################################
+# Link the executable cgraph/examples/cgraph_ivec_t_demo
+
+build cgraph/examples/cgraph_ivec_t_demo: C_EXECUTABLE_LINKER__cgraph_ivec_t_demo cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/cgraph_ivec_t_demo.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
+  FLAGS = -g -Wall -Wno-unused-function -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = cgraph/libcgraph.a
+  OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = cgraph/examples/cgraph_ivec_t_demo
+  TARGET_PDB = cgraph_ivec_t_demo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target cvector_demo
+
+
+#############################################
+# Order-only phony target for cvector_demo
+
+build cmake_object_order_depends_target_cvector_demo: phony || cgraph/examples/CMakeFiles/cvector_demo.dir
+
+build cgraph/examples/CMakeFiles/cvector_demo.dir/cvector_demo.c.o: C_COMPILER__cvector_demo ../cgraph/examples/cvector_demo.c || cmake_object_order_depends_target_cvector_demo
+  DEP_FILE = cgraph/examples/CMakeFiles/cvector_demo.dir/cvector_demo.c.o.d
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
+  INCLUDES = -I../cgraph
+  OBJECT_DIR = cgraph/examples/CMakeFiles/cvector_demo.dir
+  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cvector_demo.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target cvector_demo
+
+
+#############################################
+# Link the executable cgraph/examples/cvector_demo
+
+build cgraph/examples/cvector_demo: C_EXECUTABLE_LINKER__cvector_demo cgraph/examples/CMakeFiles/cvector_demo.dir/cvector_demo.c.o
+  FLAGS = -g -Wall -Wno-unused-function -g
+  LINK_FLAGS = -rdynamic
+  OBJECT_DIR = cgraph/examples/CMakeFiles/cvector_demo.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = cgraph/examples/cvector_demo
+  TARGET_PDB = cvector_demo.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ivec_as_param
+
+
+#############################################
+# Order-only phony target for ivec_as_param
+
+build cmake_object_order_depends_target_ivec_as_param: phony || cmake_object_order_depends_target_cgraph
+
+build cgraph/examples/CMakeFiles/ivec_as_param.dir/cgraph_ivec_as_param_demo.c.o: C_COMPILER__ivec_as_param ../cgraph/examples/cgraph_ivec_as_param_demo.c || cmake_object_order_depends_target_ivec_as_param
+  DEP_FILE = cgraph/examples/CMakeFiles/ivec_as_param.dir/cgraph_ivec_as_param_demo.c.o.d
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
+  INCLUDES = -I../cgraph
+  OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param.dir
+  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/ivec_as_param.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ivec_as_param
+
+
+#############################################
+# Link the executable cgraph/examples/ivec_as_param
+
+build cgraph/examples/ivec_as_param: C_EXECUTABLE_LINKER__ivec_as_param cgraph/examples/CMakeFiles/ivec_as_param.dir/cgraph_ivec_as_param_demo.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
+  FLAGS = -g -Wall -Wno-unused-function -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = cgraph/libcgraph.a
+  OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = cgraph/examples/ivec_as_param
+  TARGET_PDB = ivec_as_param.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target ivec_as_param2
+
+
+#############################################
+# Order-only phony target for ivec_as_param2
+
+build cmake_object_order_depends_target_ivec_as_param2: phony || cmake_object_order_depends_target_cgraph
+
+build cgraph/examples/CMakeFiles/ivec_as_param2.dir/cgraph_ivec_as_param_demo2.c.o: C_COMPILER__ivec_as_param2 ../cgraph/examples/cgraph_ivec_as_param_demo2.c || cmake_object_order_depends_target_ivec_as_param2
+  DEP_FILE = cgraph/examples/CMakeFiles/ivec_as_param2.dir/cgraph_ivec_as_param_demo2.c.o.d
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
+  INCLUDES = -I../cgraph
+  OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param2.dir
+  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/ivec_as_param2.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target ivec_as_param2
+
+
+#############################################
+# Link the executable cgraph/examples/ivec_as_param2
+
+build cgraph/examples/ivec_as_param2: C_EXECUTABLE_LINKER__ivec_as_param2 cgraph/examples/CMakeFiles/ivec_as_param2.dir/cgraph_ivec_as_param_demo2.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
+  FLAGS = -g -Wall -Wno-unused-function -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = cgraph/libcgraph.a
+  OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param2.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = cgraph/examples/ivec_as_param2
+  TARGET_PDB = ivec_as_param2.dbg
+
+
+#############################################
+# Utility command for package_source
+
+build cgraph/examples/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
 
-build cgraph/examples/install: phony cgraph/examples/CMakeFiles/install.util
-
-
-#############################################
-# Utility command for list_install_components
-
-build cgraph/examples/list_install_components: phony
-
-
-#############################################
-# Utility command for rebuild_cache
-
-build cgraph/examples/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples && /usr/bin/cmake -S/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib -B/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b
-  DESC = Running CMake to regenerate build system...
-  pool = console
-  restat = 1
-
-build cgraph/examples/rebuild_cache: phony cgraph/examples/CMakeFiles/rebuild_cache.util
+build cgraph/examples/package_source: phony cgraph/examples/CMakeFiles/package_source.util
 
 
 #############################################
@@ -499,12 +575,10 @@ build cmake_object_order_depends_target_cgraph_rvec_t_demo: phony || cmake_objec
 
 build cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir/cgraph_rvec_t_demo.c.o: C_COMPILER__cgraph_rvec_t_demo ../cgraph/examples/cgraph_rvec_t_demo.c || cmake_object_order_depends_target_cgraph_rvec_t_demo
   DEP_FILE = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir/cgraph_rvec_t_demo.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir/
-  TARGET_PDB = cgraph/examples/cgraph_rvec_t_demo.pdb
 
 
 # =============================================================================
@@ -515,174 +589,124 @@ build cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir/cgraph_rvec_t_demo.c.o: 
 # Link the executable cgraph/examples/cgraph_rvec_t_demo
 
 build cgraph/examples/cgraph_rvec_t_demo: C_EXECUTABLE_LINKER__cgraph_rvec_t_demo cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir/cgraph_rvec_t_demo.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
-  FLAGS = -g -Wall -g
+  FLAGS = -g -Wall -Wno-unused-function -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = cgraph/libcgraph.a
   OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_rvec_t_demo.dir/
   TARGET_FILE = cgraph/examples/cgraph_rvec_t_demo
-  TARGET_PDB = cgraph/examples/cgraph_rvec_t_demo.pdb
+  TARGET_PDB = cgraph_rvec_t_demo.dbg
 
 
 #############################################
-# Utility command for package_source
+# Utility command for install
 
-build cgraph/examples/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/CPackSourceConfig.cmake
-  DESC = Run CPack packaging tool for source...
+build cgraph/examples/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
   pool = console
   restat = 1
 
-build cgraph/examples/package_source: phony cgraph/examples/CMakeFiles/package_source.util
+build cgraph/examples/install: phony cgraph/examples/CMakeFiles/install.util
 
 # =============================================================================
-# Object build statements for EXECUTABLE target ivec_as_param2
+# Object build statements for EXECUTABLE target create_graph_demo
 
 
 #############################################
-# Order-only phony target for ivec_as_param2
+# Order-only phony target for create_graph_demo
 
-build cmake_object_order_depends_target_ivec_as_param2: phony || cmake_object_order_depends_target_cgraph
+build cmake_object_order_depends_target_create_graph_demo: phony || cmake_object_order_depends_target_cgraph
 
-build cgraph/examples/CMakeFiles/ivec_as_param2.dir/cgraph_ivec_as_param_demo2.c.o: C_COMPILER__ivec_as_param2 ../cgraph/examples/cgraph_ivec_as_param_demo2.c || cmake_object_order_depends_target_ivec_as_param2
-  DEP_FILE = cgraph/examples/CMakeFiles/ivec_as_param2.dir/cgraph_ivec_as_param_demo2.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+build cgraph/examples/CMakeFiles/create_graph_demo.dir/create_graph_demo.c.o: C_COMPILER__create_graph_demo ../cgraph/examples/create_graph_demo.c || cmake_object_order_depends_target_create_graph_demo
+  DEP_FILE = cgraph/examples/CMakeFiles/create_graph_demo.dir/create_graph_demo.c.o.d
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
-  OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param2.dir
-  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/ivec_as_param2.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/ivec_as_param2.dir/
-  TARGET_PDB = cgraph/examples/ivec_as_param2.pdb
+  OBJECT_DIR = cgraph/examples/CMakeFiles/create_graph_demo.dir
+  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/create_graph_demo.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target ivec_as_param2
+# Link build statements for EXECUTABLE target create_graph_demo
 
 
 #############################################
-# Link the executable cgraph/examples/ivec_as_param2
+# Link the executable cgraph/examples/create_graph_demo
 
-build cgraph/examples/ivec_as_param2: C_EXECUTABLE_LINKER__ivec_as_param2 cgraph/examples/CMakeFiles/ivec_as_param2.dir/cgraph_ivec_as_param_demo2.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
-  FLAGS = -g -Wall -g
+build cgraph/examples/create_graph_demo: C_EXECUTABLE_LINKER__create_graph_demo cgraph/examples/CMakeFiles/create_graph_demo.dir/create_graph_demo.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
+  FLAGS = -g -Wall -Wno-unused-function -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = cgraph/libcgraph.a
-  OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param2.dir
+  OBJECT_DIR = cgraph/examples/CMakeFiles/create_graph_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/ivec_as_param2.dir/
-  TARGET_FILE = cgraph/examples/ivec_as_param2
-  TARGET_PDB = cgraph/examples/ivec_as_param2.pdb
-
-# =============================================================================
-# Object build statements for EXECUTABLE target ivec_as_param
+  TARGET_FILE = cgraph/examples/create_graph_demo
+  TARGET_PDB = create_graph_demo.dbg
 
 
 #############################################
-# Order-only phony target for ivec_as_param
+# Utility command for list_install_components
 
-build cmake_object_order_depends_target_ivec_as_param: phony || cmake_object_order_depends_target_cgraph
+build cgraph/examples/list_install_components: phony
 
-build cgraph/examples/CMakeFiles/ivec_as_param.dir/cgraph_ivec_as_param_demo.c.o: C_COMPILER__ivec_as_param ../cgraph/examples/cgraph_ivec_as_param_demo.c || cmake_object_order_depends_target_ivec_as_param
-  DEP_FILE = cgraph/examples/CMakeFiles/ivec_as_param.dir/cgraph_ivec_as_param_demo.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+# =============================================================================
+# Object build statements for EXECUTABLE target cgraph_set_error_handler_demo
+
+
+#############################################
+# Order-only phony target for cgraph_set_error_handler_demo
+
+build cmake_object_order_depends_target_cgraph_set_error_handler_demo: phony || cmake_object_order_depends_target_cgraph
+
+build cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir/cgraph_set_error_handler_demo.c.o: C_COMPILER__cgraph_set_error_handler_demo ../cgraph/examples/cgraph_set_error_handler_demo.c || cmake_object_order_depends_target_cgraph_set_error_handler_demo
+  DEP_FILE = cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir/cgraph_set_error_handler_demo.c.o.d
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
-  OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param.dir
-  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/ivec_as_param.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/ivec_as_param.dir/
-  TARGET_PDB = cgraph/examples/ivec_as_param.pdb
+  OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir
+  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target ivec_as_param
+# Link build statements for EXECUTABLE target cgraph_set_error_handler_demo
 
 
 #############################################
-# Link the executable cgraph/examples/ivec_as_param
+# Link the executable cgraph/examples/cgraph_set_error_handler_demo
 
-build cgraph/examples/ivec_as_param: C_EXECUTABLE_LINKER__ivec_as_param cgraph/examples/CMakeFiles/ivec_as_param.dir/cgraph_ivec_as_param_demo.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
-  FLAGS = -g -Wall -g
+build cgraph/examples/cgraph_set_error_handler_demo: C_EXECUTABLE_LINKER__cgraph_set_error_handler_demo cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir/cgraph_set_error_handler_demo.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
+  FLAGS = -g -Wall -Wno-unused-function -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = cgraph/libcgraph.a
-  OBJECT_DIR = cgraph/examples/CMakeFiles/ivec_as_param.dir
+  OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_set_error_handler_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/ivec_as_param.dir/
-  TARGET_FILE = cgraph/examples/ivec_as_param
-  TARGET_PDB = cgraph/examples/ivec_as_param.pdb
-
-# =============================================================================
-# Object build statements for EXECUTABLE target cvector_demo
+  TARGET_FILE = cgraph/examples/cgraph_set_error_handler_demo
+  TARGET_PDB = cgraph_set_error_handler_demo.dbg
 
 
 #############################################
-# Order-only phony target for cvector_demo
+# Utility command for rebuild_cache
 
-build cmake_object_order_depends_target_cvector_demo: phony || cgraph/examples/CMakeFiles/cvector_demo.dir
+build cgraph/examples/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples && /usr/bin/cmake -S/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib -B/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
 
-build cgraph/examples/CMakeFiles/cvector_demo.dir/cvector_demo.c.o: C_COMPILER__cvector_demo ../cgraph/examples/cvector_demo.c || cmake_object_order_depends_target_cvector_demo
-  DEP_FILE = cgraph/examples/CMakeFiles/cvector_demo.dir/cvector_demo.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
-  INCLUDES = -I../cgraph
-  OBJECT_DIR = cgraph/examples/CMakeFiles/cvector_demo.dir
-  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cvector_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cvector_demo.dir/
-  TARGET_PDB = cgraph/examples/cvector_demo.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target cvector_demo
+build cgraph/examples/rebuild_cache: phony cgraph/examples/CMakeFiles/rebuild_cache.util
 
 
 #############################################
-# Link the executable cgraph/examples/cvector_demo
+# Utility command for edit_cache
 
-build cgraph/examples/cvector_demo: C_EXECUTABLE_LINKER__cvector_demo cgraph/examples/CMakeFiles/cvector_demo.dir/cvector_demo.c.o
-  FLAGS = -g -Wall -g
-  LINK_FLAGS = -rdynamic
-  OBJECT_DIR = cgraph/examples/CMakeFiles/cvector_demo.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cvector_demo.dir/
-  TARGET_FILE = cgraph/examples/cvector_demo
-  TARGET_PDB = cgraph/examples/cvector_demo.pdb
+build cgraph/examples/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples && /usr/bin/cmake-gui -S/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib -B/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
 
-# =============================================================================
-# Object build statements for EXECUTABLE target cgraph_ivec_t_demo
-
-
-#############################################
-# Order-only phony target for cgraph_ivec_t_demo
-
-build cmake_object_order_depends_target_cgraph_ivec_t_demo: phony || cmake_object_order_depends_target_cgraph
-
-build cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/cgraph_ivec_t_demo.c.o: C_COMPILER__cgraph_ivec_t_demo ../cgraph/examples/cgraph_ivec_t_demo.c || cmake_object_order_depends_target_cgraph_ivec_t_demo
-  DEP_FILE = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/cgraph_ivec_t_demo.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
-  INCLUDES = -I../cgraph
-  OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir
-  OBJECT_FILE_DIR = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/
-  TARGET_PDB = cgraph/examples/cgraph_ivec_t_demo.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target cgraph_ivec_t_demo
-
-
-#############################################
-# Link the executable cgraph/examples/cgraph_ivec_t_demo
-
-build cgraph/examples/cgraph_ivec_t_demo: C_EXECUTABLE_LINKER__cgraph_ivec_t_demo cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/cgraph_ivec_t_demo.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
-  FLAGS = -g -Wall -g
-  LINK_FLAGS = -rdynamic
-  LINK_LIBRARIES = cgraph/libcgraph.a
-  OBJECT_DIR = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/CMakeFiles/cgraph_ivec_t_demo.dir/
-  TARGET_FILE = cgraph/examples/cgraph_ivec_t_demo
-  TARGET_PDB = cgraph/examples/cgraph_ivec_t_demo.pdb
+build cgraph/examples/edit_cache: phony cgraph/examples/CMakeFiles/edit_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -790,12 +814,10 @@ build cmake_object_order_depends_target_queue: phony || cmake_object_order_depen
 
 build cgraph/examples/ctc/CMakeFiles/queue.dir/queue_demo.c.o: C_COMPILER__queue ../cgraph/examples/ctc/queue_demo.c || cmake_object_order_depends_target_queue
   DEP_FILE = cgraph/examples/ctc/CMakeFiles/queue.dir/queue_demo.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/ctc/CMakeFiles/queue.dir
   OBJECT_FILE_DIR = cgraph/examples/ctc/CMakeFiles/queue.dir
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/CMakeFiles/queue.dir/
-  TARGET_PDB = cgraph/examples/ctc/queue.pdb
 
 
 # =============================================================================
@@ -806,15 +828,14 @@ build cgraph/examples/ctc/CMakeFiles/queue.dir/queue_demo.c.o: C_COMPILER__queue
 # Link the executable cgraph/examples/ctc/queue
 
 build cgraph/examples/ctc/queue: C_EXECUTABLE_LINKER__queue cgraph/examples/ctc/CMakeFiles/queue.dir/queue_demo.c.o | cgraph/ctc/libcollectc.a || cgraph/ctc/libcollectc.a
-  FLAGS = -g -Wall -g
+  FLAGS = -g -Wall -Wno-unused-function -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = cgraph/ctc/libcollectc.a
   OBJECT_DIR = cgraph/examples/ctc/CMakeFiles/queue.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/CMakeFiles/queue.dir/
   TARGET_FILE = cgraph/examples/ctc/queue
-  TARGET_PDB = cgraph/examples/ctc/queue.pdb
+  TARGET_PDB = queue.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -910,12 +931,10 @@ build cmake_object_order_depends_target_pq_demo: phony || cmake_object_order_dep
 
 build cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir/pqueue_demo.c.o: C_COMPILER__pq_demo ../cgraph/examples/ctc/my/pqueue_demo.c || cmake_object_order_depends_target_pq_demo
   DEP_FILE = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir/pqueue_demo.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir/
-  TARGET_PDB = cgraph/examples/ctc/my/pq_demo.pdb
 
 
 # =============================================================================
@@ -926,15 +945,14 @@ build cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir/pqueue_demo.c.o: C_COMPILER_
 # Link the executable cgraph/examples/ctc/my/pq_demo
 
 build cgraph/examples/ctc/my/pq_demo: C_EXECUTABLE_LINKER__pq_demo cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir/pqueue_demo.c.o | cgraph/ctc/libcollectc.a || cgraph/ctc/libcollectc.a
-  FLAGS = -g -Wall -g
+  FLAGS = -g -Wall -Wno-unused-function -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = cgraph/ctc/libcollectc.a
   OBJECT_DIR = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/my/CMakeFiles/pq_demo.dir/
   TARGET_FILE = cgraph/examples/ctc/my/pq_demo
-  TARGET_PDB = cgraph/examples/ctc/my/pq_demo.pdb
+  TARGET_PDB = pq_demo.dbg
 
 
 #############################################
@@ -959,12 +977,10 @@ build cmake_object_order_depends_target_hsi_demo: phony || cmake_object_order_de
 
 build cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir/hsi_demo.c.o: C_COMPILER__hsi_demo ../cgraph/examples/ctc/my/hsi_demo.c || cmake_object_order_depends_target_hsi_demo
   DEP_FILE = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir/hsi_demo.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir
   OBJECT_FILE_DIR = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir/
-  TARGET_PDB = cgraph/examples/ctc/my/hsi_demo.pdb
 
 
 # =============================================================================
@@ -975,15 +991,14 @@ build cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir/hsi_demo.c.o: C_COMPILER__h
 # Link the executable cgraph/examples/ctc/my/hsi_demo
 
 build cgraph/examples/ctc/my/hsi_demo: C_EXECUTABLE_LINKER__hsi_demo cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir/hsi_demo.c.o | cgraph/ctc/libcollectc.a || cgraph/ctc/libcollectc.a
-  FLAGS = -g -Wall -g
+  FLAGS = -g -Wall -Wno-unused-function -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = cgraph/ctc/libcollectc.a
   OBJECT_DIR = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/ctc/my/CMakeFiles/hsi_demo.dir/
   TARGET_FILE = cgraph/examples/ctc/my/hsi_demo
-  TARGET_PDB = cgraph/examples/ctc/my/hsi_demo.pdb
+  TARGET_PDB = hsi_demo.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1095,8 +1110,6 @@ build cgraph/examples/application/CMakeFiles/task1cc.dir/task1.cc.o: CXX_COMPILE
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/application/CMakeFiles/task1cc.dir
   OBJECT_FILE_DIR = cgraph/examples/application/CMakeFiles/task1cc.dir
-  TARGET_COMPILE_PDB = cgraph/examples/application/CMakeFiles/task1cc.dir/
-  TARGET_PDB = cgraph/examples/application/task1cc.pdb
 
 
 # =============================================================================
@@ -1113,9 +1126,8 @@ build cgraph/examples/application/task1cc: CXX_EXECUTABLE_LINKER__task1cc cgraph
   OBJECT_DIR = cgraph/examples/application/CMakeFiles/task1cc.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/application/CMakeFiles/task1cc.dir/
   TARGET_FILE = cgraph/examples/application/task1cc
-  TARGET_PDB = cgraph/examples/application/task1cc.pdb
+  TARGET_PDB = task1cc.dbg
 
 # =============================================================================
 # Object build statements for EXECUTABLE target task1c
@@ -1128,12 +1140,10 @@ build cmake_object_order_depends_target_task1c: phony || cmake_object_order_depe
 
 build cgraph/examples/application/CMakeFiles/task1c.dir/task1.c.o: C_COMPILER__task1c ../cgraph/examples/application/task1.c || cmake_object_order_depends_target_task1c
   DEP_FILE = cgraph/examples/application/CMakeFiles/task1c.dir/task1.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/examples/application/CMakeFiles/task1c.dir
   OBJECT_FILE_DIR = cgraph/examples/application/CMakeFiles/task1c.dir
-  TARGET_COMPILE_PDB = cgraph/examples/application/CMakeFiles/task1c.dir/
-  TARGET_PDB = cgraph/examples/application/task1c.pdb
 
 
 # =============================================================================
@@ -1144,15 +1154,279 @@ build cgraph/examples/application/CMakeFiles/task1c.dir/task1.c.o: C_COMPILER__t
 # Link the executable cgraph/examples/application/task1c
 
 build cgraph/examples/application/task1c: C_EXECUTABLE_LINKER__task1c cgraph/examples/application/CMakeFiles/task1c.dir/task1.c.o | cgraph/ctc/libcollectc.a cgraph/libcgraph.a || cgraph/ctc/libcollectc.a cgraph/libcgraph.a
-  FLAGS = -g -Wall -g
+  FLAGS = -g -Wall -Wno-unused-function -g
   LINK_FLAGS = -rdynamic
   LINK_LIBRARIES = cgraph/ctc/libcollectc.a  cgraph/libcgraph.a
   OBJECT_DIR = cgraph/examples/application/CMakeFiles/task1c.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/examples/application/CMakeFiles/task1c.dir/
   TARGET_FILE = cgraph/examples/application/task1c
-  TARGET_PDB = cgraph/examples/application/task1c.pdb
+  TARGET_PDB = task1c.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/cgraph/examples/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build cgraph/examples/cgen/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/cgen/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/cgen && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build cgraph/examples/cgen/install/strip: phony cgraph/examples/cgen/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build cgraph/examples/cgen/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/cgen && /usr/bin/cmake-gui -S/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib -B/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build cgraph/examples/cgen/edit_cache: phony cgraph/examples/cgen/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for package_source
+
+build cgraph/examples/cgen/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build cgraph/examples/cgen/package_source: phony cgraph/examples/cgen/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for install
+
+build cgraph/examples/cgen/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/cgen/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/cgen && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build cgraph/examples/cgen/install: phony cgraph/examples/cgen/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build cgraph/examples/cgen/list_install_components: phony
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build cgraph/examples/cgen/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/cgen && /usr/bin/cmake -S/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib -B/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build cgraph/examples/cgen/rebuild_cache: phony cgraph/examples/cgen/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for package
+
+build cgraph/examples/cgen/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/examples/cgen/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build cgraph/examples/cgen/package: phony cgraph/examples/cgen/CMakeFiles/package.util
+
+
+#############################################
+# Utility command for install/local
+
+build cgraph/examples/cgen/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/examples/cgen/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/cgen && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build cgraph/examples/cgen/install/local: phony cgraph/examples/cgen/CMakeFiles/install/local.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target vector_of_ivec
+
+
+#############################################
+# Order-only phony target for vector_of_ivec
+
+build cmake_object_order_depends_target_vector_of_ivec: phony || cmake_object_order_depends_target_cgraph
+
+build cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir/vector_of_ivec.c.o: C_COMPILER__vector_of_ivec ../cgraph/examples/cgen/vector_of_ivec.c || cmake_object_order_depends_target_vector_of_ivec
+  DEP_FILE = cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir/vector_of_ivec.c.o.d
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
+  INCLUDES = -I../cgraph
+  OBJECT_DIR = cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir
+  OBJECT_FILE_DIR = cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target vector_of_ivec
+
+
+#############################################
+# Link the executable cgraph/examples/cgen/vector_of_ivec
+
+build cgraph/examples/cgen/vector_of_ivec: C_EXECUTABLE_LINKER__vector_of_ivec cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir/vector_of_ivec.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
+  FLAGS = -g -Wall -Wno-unused-function -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = cgraph/libcgraph.a
+  OBJECT_DIR = cgraph/examples/cgen/CMakeFiles/vector_of_ivec.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = cgraph/examples/cgen/vector_of_ivec
+  TARGET_PDB = vector_of_ivec.dbg
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/cgraph/examples/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for install/strip
+
+build cgraph/examples/bus/CMakeFiles/install/strip.util: CUSTOM_COMMAND cgraph/examples/bus/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/bus && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build cgraph/examples/bus/install/strip: phony cgraph/examples/bus/CMakeFiles/install/strip.util
+
+
+#############################################
+# Utility command for install/local
+
+build cgraph/examples/bus/CMakeFiles/install/local.util: CUSTOM_COMMAND cgraph/examples/bus/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/bus && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build cgraph/examples/bus/install/local: phony cgraph/examples/bus/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for edit_cache
+
+build cgraph/examples/bus/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/bus && /usr/bin/cmake-gui -S/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib -B/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build cgraph/examples/bus/edit_cache: phony cgraph/examples/bus/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for package_source
+
+build cgraph/examples/bus/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b && /usr/bin/cpack --config ./CPackSourceConfig.cmake /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/CPackSourceConfig.cmake
+  DESC = Run CPack packaging tool for source...
+  pool = console
+  restat = 1
+
+build cgraph/examples/bus/package_source: phony cgraph/examples/bus/CMakeFiles/package_source.util
+
+
+#############################################
+# Utility command for install
+
+build cgraph/examples/bus/CMakeFiles/install.util: CUSTOM_COMMAND cgraph/examples/bus/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/bus && /usr/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build cgraph/examples/bus/install: phony cgraph/examples/bus/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build cgraph/examples/bus/list_install_components: phony
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build cgraph/examples/bus/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/bus && /usr/bin/cmake -S/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib -B/home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build cgraph/examples/bus/rebuild_cache: phony cgraph/examples/bus/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for package
+
+build cgraph/examples/bus/CMakeFiles/package.util: CUSTOM_COMMAND cgraph/examples/bus/all
+  COMMAND = cd /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b && /usr/bin/cpack --config ./CPackConfig.cmake
+  DESC = Run CPack packaging tool...
+  pool = console
+  restat = 1
+
+build cgraph/examples/bus/package: phony cgraph/examples/bus/CMakeFiles/package.util
+
+# =============================================================================
+# Object build statements for EXECUTABLE target bus
+
+
+#############################################
+# Order-only phony target for bus
+
+build cmake_object_order_depends_target_bus: phony || cmake_object_order_depends_target_cgraph
+
+build cgraph/examples/bus/CMakeFiles/bus.dir/main.c.o: C_COMPILER__bus ../cgraph/examples/bus/main.c || cmake_object_order_depends_target_bus
+  DEP_FILE = cgraph/examples/bus/CMakeFiles/bus.dir/main.c.o.d
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
+  INCLUDES = -I../cgraph
+  OBJECT_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
+  OBJECT_FILE_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
+
+build cgraph/examples/bus/CMakeFiles/bus.dir/getline.c.o: C_COMPILER__bus ../cgraph/examples/bus/getline.c || cmake_object_order_depends_target_bus
+  DEP_FILE = cgraph/examples/bus/CMakeFiles/bus.dir/getline.c.o.d
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
+  INCLUDES = -I../cgraph
+  OBJECT_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
+  OBJECT_FILE_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target bus
+
+
+#############################################
+# Link the executable cgraph/examples/bus/bus
+
+build cgraph/examples/bus/bus: C_EXECUTABLE_LINKER__bus cgraph/examples/bus/CMakeFiles/bus.dir/main.c.o cgraph/examples/bus/CMakeFiles/bus.dir/getline.c.o | cgraph/libcgraph.a || cgraph/libcgraph.a
+  FLAGS = -g -Wall -Wno-unused-function -g
+  LINK_FLAGS = -rdynamic
+  LINK_LIBRARIES = cgraph/libcgraph.a
+  OBJECT_DIR = cgraph/examples/bus/CMakeFiles/bus.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = cgraph/examples/bus/bus
+  TARGET_PDB = bus.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -1260,138 +1534,108 @@ build cmake_object_order_depends_target_collectc: phony || cgraph/ctc/CMakeFiles
 
 build cgraph/ctc/CMakeFiles/collectc.dir/array.c.o: C_COMPILER__collectc ../cgraph/ctc/array.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/array.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/common.c.o: C_COMPILER__collectc ../cgraph/ctc/common.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/common.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/deque.c.o: C_COMPILER__collectc ../cgraph/ctc/deque.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/deque.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/hashset.c.o: C_COMPILER__collectc ../cgraph/ctc/hashset.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/hashset.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/hashtable.c.o: C_COMPILER__collectc ../cgraph/ctc/hashtable.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/hashtable.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/list.c.o: C_COMPILER__collectc ../cgraph/ctc/list.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/list.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/pqueue.c.o: C_COMPILER__collectc ../cgraph/ctc/pqueue.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/pqueue.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/queue.c.o: C_COMPILER__collectc ../cgraph/ctc/queue.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/queue.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/ring_buffer.c.o: C_COMPILER__collectc ../cgraph/ctc/ring_buffer.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/ring_buffer.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/slist.c.o: C_COMPILER__collectc ../cgraph/ctc/slist.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/slist.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/stack.c.o: C_COMPILER__collectc ../cgraph/ctc/stack.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/stack.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/treeset.c.o: C_COMPILER__collectc ../cgraph/ctc/treeset.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/treeset.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/treetable.c.o: C_COMPILER__collectc ../cgraph/ctc/treetable.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/treetable.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/tsttable.c.o: C_COMPILER__collectc ../cgraph/ctc/tsttable.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/tsttable.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 build cgraph/ctc/CMakeFiles/collectc.dir/my/hsi.c.o: C_COMPILER__collectc ../cgraph/ctc/my/hsi.c || cmake_object_order_depends_target_collectc
   DEP_FILE = cgraph/ctc/CMakeFiles/collectc.dir/my/hsi.c.o.d
-  FLAGS = -g -Wall -g   -std=gnu11
+  FLAGS = -g -Wall -Wno-unused-function -g   -std=gnu11
   INCLUDES = -I../cgraph
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   OBJECT_FILE_DIR = cgraph/ctc/CMakeFiles/collectc.dir/my
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
 
 
 # =============================================================================
@@ -1402,16 +1646,17 @@ build cgraph/ctc/CMakeFiles/collectc.dir/my/hsi.c.o: C_COMPILER__collectc ../cgr
 # Link the static library cgraph/ctc/libcollectc.a
 
 build cgraph/ctc/libcollectc.a: C_STATIC_LIBRARY_LINKER__collectc cgraph/ctc/CMakeFiles/collectc.dir/array.c.o cgraph/ctc/CMakeFiles/collectc.dir/common.c.o cgraph/ctc/CMakeFiles/collectc.dir/deque.c.o cgraph/ctc/CMakeFiles/collectc.dir/hashset.c.o cgraph/ctc/CMakeFiles/collectc.dir/hashtable.c.o cgraph/ctc/CMakeFiles/collectc.dir/list.c.o cgraph/ctc/CMakeFiles/collectc.dir/pqueue.c.o cgraph/ctc/CMakeFiles/collectc.dir/queue.c.o cgraph/ctc/CMakeFiles/collectc.dir/ring_buffer.c.o cgraph/ctc/CMakeFiles/collectc.dir/slist.c.o cgraph/ctc/CMakeFiles/collectc.dir/stack.c.o cgraph/ctc/CMakeFiles/collectc.dir/treeset.c.o cgraph/ctc/CMakeFiles/collectc.dir/treetable.c.o cgraph/ctc/CMakeFiles/collectc.dir/tsttable.c.o cgraph/ctc/CMakeFiles/collectc.dir/my/hsi.c.o
-  LANGUAGE_COMPILE_FLAGS = -g -Wall -g
+  LANGUAGE_COMPILE_FLAGS = -g -Wall -Wno-unused-function -g
   OBJECT_DIR = cgraph/ctc/CMakeFiles/collectc.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = cgraph/ctc/CMakeFiles/collectc.dir/collectc.pdb
   TARGET_FILE = cgraph/ctc/libcollectc.a
-  TARGET_PDB = cgraph/ctc/libcollectc.pdb
+  TARGET_PDB = collectc.a.dbg
 
 # =============================================================================
 # Target aliases.
+
+build bus: phony cgraph/examples/bus/bus
 
 build cgraph: phony cgraph/libcgraph.a
 
@@ -1419,7 +1664,11 @@ build cgraph_ivec_t_demo: phony cgraph/examples/cgraph_ivec_t_demo
 
 build cgraph_rvec_t_demo: phony cgraph/examples/cgraph_rvec_t_demo
 
+build cgraph_set_error_handler_demo: phony cgraph/examples/cgraph_set_error_handler_demo
+
 build collectc: phony cgraph/ctc/libcollectc.a
+
+build create_graph_demo: phony cgraph/examples/create_graph_demo
 
 build cvector_demo: phony cgraph/examples/cvector_demo
 
@@ -1442,6 +1691,8 @@ build queue: phony cgraph/examples/ctc/queue
 build task1c: phony cgraph/examples/application/task1c
 
 build task1cc: phony cgraph/examples/application/task1cc
+
+build vector_of_ivec: phony cgraph/examples/cgen/vector_of_ivec
 
 # =============================================================================
 # Folder targets.
@@ -1472,7 +1723,7 @@ build cgraph/ctc/all: phony cgraph/ctc/libcollectc.a
 #############################################
 # Folder: /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples
 
-build cgraph/examples/all: phony cgraph/examples/cgraph_rvec_t_demo cgraph/examples/ivec_as_param2 cgraph/examples/ivec_as_param cgraph/examples/cvector_demo cgraph/examples/cgraph_ivec_t_demo cgraph/examples/ctc/all cgraph/examples/application/all
+build cgraph/examples/all: phony cgraph/examples/cgraph_ivec_t_demo cgraph/examples/cvector_demo cgraph/examples/ivec_as_param cgraph/examples/ivec_as_param2 cgraph/examples/cgraph_rvec_t_demo cgraph/examples/create_graph_demo cgraph/examples/cgraph_set_error_handler_demo cgraph/examples/ctc/all cgraph/examples/application/all cgraph/examples/cgen/all cgraph/examples/bus/all
 
 # =============================================================================
 
@@ -1480,6 +1731,20 @@ build cgraph/examples/all: phony cgraph/examples/cgraph_rvec_t_demo cgraph/examp
 # Folder: /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/application
 
 build cgraph/examples/application/all: phony cgraph/examples/application/task1cc cgraph/examples/application/task1c
+
+# =============================================================================
+
+#############################################
+# Folder: /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/bus
+
+build cgraph/examples/bus/all: phony cgraph/examples/bus/bus
+
+# =============================================================================
+
+#############################################
+# Folder: /home/ducanh/Cprogramming/BTLTRR/code-trr/graphlib/b/cgraph/examples/cgen
+
+build cgraph/examples/cgen/all: phony cgraph/examples/cgen/vector_of_ivec
 
 # =============================================================================
 
@@ -1512,14 +1777,14 @@ default all
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cgraph/CMakeLists.txt ../cgraph/ctc/CMakeLists.txt ../cgraph/examples/CMakeLists.txt ../cgraph/examples/application/CMakeLists.txt ../cgraph/examples/ctc/CMakeLists.txt ../cgraph/examples/ctc/my/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.16/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | ../CMakeLists.txt ../cgraph/CMakeLists.txt ../cgraph/ctc/CMakeLists.txt ../cgraph/examples/CMakeLists.txt ../cgraph/examples/application/CMakeLists.txt ../cgraph/examples/bus/CMakeLists.txt ../cgraph/examples/cgen/CMakeLists.txt ../cgraph/examples/ctc/CMakeLists.txt ../cgraph/examples/ctc/my/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build ../CMakeLists.txt ../cgraph/CMakeLists.txt ../cgraph/ctc/CMakeLists.txt ../cgraph/examples/CMakeLists.txt ../cgraph/examples/application/CMakeLists.txt ../cgraph/examples/ctc/CMakeLists.txt ../cgraph/examples/ctc/my/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCCompiler.cmake.in /usr/share/cmake-3.16/Modules/CMakeCCompilerABI.c /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompileFeatures.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.16/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.16/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.16/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.16/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.16/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.16/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-FindBinUtils.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Compiler/HP-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.16/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XL-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/zOS-C-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
+build ../CMakeLists.txt ../cgraph/CMakeLists.txt ../cgraph/ctc/CMakeLists.txt ../cgraph/examples/CMakeLists.txt ../cgraph/examples/application/CMakeLists.txt ../cgraph/examples/bus/CMakeLists.txt ../cgraph/examples/cgen/CMakeLists.txt ../cgraph/examples/ctc/CMakeLists.txt ../cgraph/examples/ctc/my/CMakeLists.txt /usr/share/cmake-3.16/Modules/CMakeCInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.16/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-3.16/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.16/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.16/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.16/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.16/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.16/Modules/CPack.cmake /usr/share/cmake-3.16/Modules/CPackComponent.cmake /usr/share/cmake-3.16/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-C.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Compiler/GNU.cmake /usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-C.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.16/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.16/Modules/Platform/Linux.cmake /usr/share/cmake-3.16/Modules/Platform/UnixPaths.cmake /usr/share/cmake-3.16/Templates/CPackConfig.cmake.in CMakeCache.txt CMakeFiles/3.16.3/CMakeCCompiler.cmake CMakeFiles/3.16.3/CMakeCXXCompiler.cmake CMakeFiles/3.16.3/CMakeSystem.cmake: phony
 
 
 #############################################

@@ -1,0 +1,16 @@
+graph dothi
+{
+1 [fillcolor=green, style=filled];
+2 [fillcolor=red, style=filled];
+3 [fillcolor=red, style=filled];
+4 [fillcolor=red, style=filled];
+5 [fillcolor=green, style=filled];
+6 [fillcolor=blue, style=filled];
+1 -- 2;
+2 -- 6;
+6 -- 1;
+4 -- 1;
+4 -- 5;
+5 -- 6;
+3 -- 5;
+}

@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../graphlib/graphlib.h"
+#include "cgraph/graphlib.h"
 
 int main(){
 

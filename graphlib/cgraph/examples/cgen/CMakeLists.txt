@@ -1,2 +1,0 @@
-add_executable(vector_of_ivec vector_of_ivec.c)
-target_link_libraries(vector_of_ivec cgraph)

@@ -187,40 +187,41 @@ int main(){
 
 
     //COLORING
-    // E *edges;
-    // //deg luu bac, n luu so dinh, m luu so canh
-    // int *deg, n, m;
-    // FILE *fptr;
-    // if((fptr=fopen("input.txt", "r"))==NULL){
-    //     printf("Cannot open file dothi.txt\n");
-    //     return -1;
-    // }
-    // //Doc so dinh, so canh -> khoi tao mang
-    // fscanf(fptr, "%d %d\n", &n, &m);
-    // edges=malloc((m)*sizeof(E));
-    // deg=malloc((n+1)*sizeof(int));
-    // for(int i=0; i<m; i++){
-    //     fscanf(fptr, "%d %d\n", &edges[i].p1, &edges[i].p2);
-    //     deg[edges[i].p1]++;
-    //     deg[edges[i].p2]++;
-    // }
-    // coloring(edges, deg, m, n);
-
-    //DIJKSTRA
+    E *edges;
+    //deg luu bac, n luu so dinh, m luu so canh
+    int *deg, n, m;
     FILE *fptr;
-    if((fptr = fopen("input.txt", "r")) == NULL){
-        printf("Khong mo duoc file\n");
+    if((fptr=fopen("input.txt", "r"))==NULL){
+        printf("Cannot open file dothi.txt\n");
         return -1;
     }
-    int n, u;
-    int Graph[MAX][MAX];
-    fscanf(fptr, "%d\n", &n);
-    while(!feof(fptr)){
-        int u, v, w;
-        fscanf(fptr, "%d %d %d", &u, &v, &w);
-        Graph[u][v] = w;
+    //Doc so dinh, so canh -> khoi tao mang
+    fscanf(fptr, "%d %d\n", &n, &m);
+    edges=malloc((m)*sizeof(E));
+    deg=malloc((n+1)*sizeof(int));
+    for(int i=0; i<m; i++){
+        fscanf(fptr, "%d %d\n", &edges[i].p1, &edges[i].p2);
+        deg[edges[i].p1]++;
+        deg[edges[i].p2]++;
     }
+    coloring(edges, deg, m, n);
 
-    u = 0;
-    Dijkstra(Graph, n, u);
+
+    //DIJKSTRA
+    // FILE *fptr;
+    // if((fptr = fopen("input.txt", "r")) == NULL){
+    //     printf("Khong mo duoc file\n");
+    //     return -1;
+    // }
+    // int n, u;
+    // int Graph[MAX][MAX];
+    // fscanf(fptr, "%d\n", &n);
+    // while(!feof(fptr)){
+    //     int u, v, w;
+    //     fscanf(fptr, "%d %d %d", &u, &v, &w);
+    //     Graph[u][v] = w;
+    // }
+
+    // u = 0;
+    // Dijkstra(Graph, n, u);
 }

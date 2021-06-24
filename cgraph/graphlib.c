@@ -219,6 +219,7 @@ void printFatherCode(cgraph_t g, int root){
     cgraph_simple_bfs(g, root, CGRAPH_ALL, false, &father, &dist);
     printf("\nFather code:\n");
     for(int i=1; i<cgraph_ivec_size(father); i++){
+      if(i==root) continue;
         printf("%6d", father[i]);
     }
     printf("\n");

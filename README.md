@@ -18,3 +18,4 @@ target_link_libraries(tenfilethucthi cgraph)
 
 - Các file dữ liệu test nằm trong thư mục Test Data có tên ứng với từng thuật toán (hàm) trong thư viện
 - Thư mục 'Test case' chứa file chứa mã nguồn để test các thuật toán đã viết thêm trong thư viện graphlib.h
+- Khi muốn test thuật toán nào bỏ comment code phần đó và comment hết những phần code còn lại
